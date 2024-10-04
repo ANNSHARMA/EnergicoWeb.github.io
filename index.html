@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/b37a8d6a03.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="./dist/style.css">
   <title>Home page</title>
 </head>
 <body class="box-border">
@@ -33,7 +33,14 @@
   </ul>
 </div>
 <div class="sm:hidden block">
-  <i class="fa-solid fa-bars pt-8 text-2xl text-[#1fba1f]"></i>
+  <i class="fa-solid fa-bars pt-8 text-2xl text-[#1fba1f] bars"></i>
+  <div class="shadow-lg bg-white h-[70%] w-full py-2 px-1 link hidden">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="Contact.html">Contact Us</a></li>
+  </ul>
+  </div>
 </div>
     </nav>
   </header>
@@ -232,5 +239,6 @@
     <p>Energico © 2022 · Privacy Policy</p>
   </div>
 </footer>
+<script src="toggle.js"></script>
 </body>
 </html>
