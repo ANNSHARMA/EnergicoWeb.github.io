@@ -1,9 +1,19 @@
-let togg = document.querySelector('.bars');
-let text = document.querySelector('.links')
-// console.log(bars);
-// console.log(link);
 
+let humburg = document.querySelector('.menu');
+let show = document.querySelector('.side');
+let Content =document.querySelector('.content');
 
-togg.addEventListener('click', function(){
+humburg.addEventListener('click', function(){
+  if(humburg.firstElementChild.classList.contains('fa-bars')){
+    humburg.firstElementChild.classList.replace('fa-bars', 'fa-times')
+  }else{
+ humburg.firstElementChild.classList.replace('fa-times', 'fa-bars')
+  }
+
+  show.classList.toggle('hidden')
 
 })
+
+// humburg.addEventListener('click', function(){
+//   show.style.display = 'flex'
+// })
