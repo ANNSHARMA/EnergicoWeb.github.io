@@ -3,7 +3,7 @@ let humburg = document.querySelector('.menu');
 let show = document.querySelector('.side');
 let Content =document.querySelector('.content');
 
-humburg.addEventListener('click', function(){
+humburg.addEventListener('touchstart', function(){
   if(humburg.firstElementChild.classList.contains('fa-bars')){
     humburg.firstElementChild.classList.replace('fa-bars', 'fa-times')
   }else{
